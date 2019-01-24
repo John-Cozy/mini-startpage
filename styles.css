@@ -26,8 +26,6 @@ a {
 }
 
 #image_box {
-  float:left;
-  display:inline-block;
   margin-right:20px;
   background-position: center;
   background-size: 100%;
@@ -37,7 +35,7 @@ a {
 .image_panel {
   float: left;
   height: 100%;
-  width: 50%;
+  width: 33.3%;
   opacity: 0;
   transition: 0.2s;
 }
@@ -74,6 +72,14 @@ a {
 #left_button_black {
   background-image: url("images/left_black.png");
   left: 10px;
+}
+#middle_button_white {
+  background-color: white;
+  left: 45%;
+}
+#middle_button_black {
+  background-color: black;
+  left: 45%;
 }
 #right_button_white {
   background-image: url("images/right.png");
