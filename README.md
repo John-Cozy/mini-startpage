@@ -5,7 +5,7 @@ Here's a little start page that I'm currently working on
 - [x] Shrink buttons
 - [ ] Put all on one page
 - [x] Add image changing functions
-- [ ] Search Function
+- [x] Search Function
 
 ### Sources
 - [Material Filled Icons](https://icons8.com/icons/material)

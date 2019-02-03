@@ -4,29 +4,19 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>New Tab</title>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
-		<link rel="shortcut icon" href="favicon.ico" />
-		<style>
-			body { background: url(backgrounds/background_00.png) no-repeat center; }
-			#wrapper { height: 200px; width: 50px; }
-			#wrapper a div {
-			  height: 30px;
-			  width: 30px;
-				margin: 5px auto;
-			  border-radius: 20px;
-			  opacity: 0.5;
-				transition: .5s;
-			  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.7));
-			}
-			#wrapper a div:hover { opacity: 0.8; }
-		</style>
+		<link rel="shortcut icon" href="favicon.ico"/>
 	</head>
   <body>
     <div id='wrapper'>
-        <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
-        <a href="pages/2.html"><div style="background-color: #131C11; margin-left:-15px;"></div></a>
-        <a href="pages/3.html"><div style="background-color: #27092E;"></div></a>
-        <a href="pages/2.html"><div style="background-color: #131C11; margin-right:-15px;"></div></a>
-        <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
-    </div>
+			<div id='page_buttons'>
+	      <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
+	      <a href="pages/2.html"><div style="background-color: #131C11; margin-left:-15px;"></div></a>
+	      <a href="pages/3.html"><div style="background-color: #27092E;"></div></a>
+	      <a href="pages/2.html"><div style="background-color: #131C11; margin-right:-15px;"></div></a>
+	      <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
+			</div>
+			<input id='searchbox' class='move_down' name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="" size="17" autofocus="autofocus"/>
+		</div>
   </body>
+	<script src="js/search.js"></script>
 </html>
