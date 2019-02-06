@@ -6,6 +6,7 @@ Here's a little start page that I'm currently working on
 - [ ] Put all on one page
 - [x] Add image changing functions
 - [x] Search Function
+- [ ] Slowly fade images
 
 ### Sources
 - [Material Filled Icons](https://icons8.com/icons/material)
