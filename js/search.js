@@ -38,7 +38,7 @@ window.onload = function() {
   // search
   searchInput = document.getElementById("searchbox");
   if (!!searchInput) {
-    searchInput.addEventListener("keypress", function(a) {
+    searchInput.addEventListener("keydown", function(a) {
       var key = a.keyCode;
       if (key == 13) {
         var query = this.value;
