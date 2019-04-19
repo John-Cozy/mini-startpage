@@ -5,18 +5,151 @@
 		<title>New Tab</title>
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
 		<link rel="shortcut icon" href="favicon.ico"/>
+		<script src="js/images.js"></script>
+		<script src="js/pages.js"></script>
 	</head>
   <body>
-    <div id='wrapper'>
+		<div class='back_cont' id='back_cont_1'></div>
+		<div class='fade_in back_cont' id='back_cont_2'></div>
+		<div class='container' id='page_0'>
 			<div id='page_buttons'>
-	      <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
-	      <a href="pages/2.html"><div style="background-color: #131C11; margin-left:-15px;"></div></a>
-	      <a href="pages/3.html"><div style="background-color: #27092E;"></div></a>
-	      <a href="pages/2.html"><div style="background-color: #131C11; margin-right:-15px;"></div></a>
-	      <a href="pages/1.html"><div style="background-color: #4C0B0F;"></div></a>
+	      <a onclick="changePage('0', '1'); displayImage('1', 3)" href="javascript:void(0);"><div style="background-color: #4C0B0F;"></div></a>
+	      <a onclick="changePage('0', '2'); displayImage('2', 3)" href="javascript:void(0);"><div style="background-color: #131C11; margin-left:-15px;"></div></a>
+	      <a onclick="changePage('0', '3'); displayImage('3', 3)" href="javascript:void(0);"><div style="background-color: #27092E;"></div></a>
+	      <a onclick="changePage('0', '2'); displayImage('2', 3)" href="javascript:void(0);"><div style="background-color: #131C11; margin-right:-15px;"></div></a>
+	      <a onclick="changePage('0', '1'); displayImage('1', 3)" href="javascript:void(0);"><div style="background-color: #4C0B0F;"></div></a>
 			</div>
-			<input id='searchbox' class='move_down' name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="" size="17" autofocus="autofocus"/>
+			<input id='search_box' class='move_down' name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100" placeholder="" size="17" autofocus="autofocus"/>
 		</div>
-  </body>
+		<div class='hidden container' id='page_1'>
+			<div class='image_box' id='image_box_1' style="height:280px; width:280px;">
+				<div class='left image_panel'><a onclick="changePage('1', '3'); displayImage('3', 3)" href="javascript:void(0);"><div class='left black nav_button'></div></a></div>
+				<div class='middle image_panel'><a onclick="swapImage('1', 3)" href="javascript:void(0);"><div class='middle black nav_button'></div></a></div>
+				<div class='right image_panel'><a onclick="changePage('1', '2'); displayImage('2', 3)" href="javascript:void(0);"><div class='right black nav_button'></div></a></div>
+			</div>
+			<div class='links'>
+				<div class='row'>
+					<a href="https://www.youtube.com/feed/subscriptions"><img src='icons/youtube.png' class='title_img'/></a>
+					<a>Youtube</a>
+					<a>Youtube</a>
+					<a>Youtube</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/stream.png' class='title_img'/></a>
+					<a>Stream</a>
+					<a>Stream</a>
+					<a>Stream</a>
+					<a>Stream</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/money.png' class='title_img'/></a>
+					<a>Bank</a>
+					<a>Bank</a>
+					<a>Purchase</a>
+					<a>Purchase</a>
+				</div>
+				<div class='row'>
+					<a href="https://www.reddit.com/"><img src='icons/reddit.png' class='title_img'/></a>
+					<a>Reddit</a>
+					<a>Reddit</a>
+					<a>Reddit</a>
+					<a>Reddit</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/music.png' class='title_img'/></a>
+					<a>Music</a>
+					<a>Music</a>
+					<a>Music</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/torrent.png' class='title_img'/></a>
+					<a>Download</a>
+					<a>Download</a>
+					<a>Torrent</a>
+					<a>Torrent</a>
+				</div>
+			</div>
+		</div>
+		<div class='hidden container' id='page_2'>
+			<div class='image_box' id='image_box_2' style="height:280px; width:280px;">
+				<div class='left image_panel'><a onclick="changePage('2', '1'); displayImage('1', 3)" href="javascript:void(0);"><div class='left black nav_button'></div></a></div>
+				<div class='middle image_panel'><a onclick="swapImage('2', 3)" href="javascript:void(0);"><div class='middle black nav_button'></div></a></div>
+				<div class='right image_panel'><a onclick="changePage('2', '3'); displayImage('3', 3)" href="javascript:void(0);"><div class='right black nav_button'></div></a></div>
+			</div>
+			<div class='links'>
+				<div class='row'>
+					<a href="https://www.youtube.com/feed/subscriptions"><img src='icons/youtube.png' class='title_img'/></a>
+					<a>Youtube</a>
+					<a>Youtube</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/email.png' class='title_img'/></a>
+					<a>Email</a>
+					<a>Email</a>
+					<a>Email</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/university.png' class='title_img'/></a>
+					<a>Main Page</a>
+					<a>Subpage</a>
+					<a>Subpage</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/modules.png' class='title_img'/></a>
+					<a>Module</a>
+					<a>Module</a>
+					<a>Module</a>
+					<a>Module</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/slack.png' class='title_img'/></a>
+					<a>Slack</a>
+					<a>Slack</a>
+					<a>Slack</a>
+					<a>Slack</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/github.png' class='title_img'/></a>
+					<a>GitHub</a>
+					<a>GitHub</a>
+				</div>
+			</div>
+		</div>
+		<div class='hidden container' id='page_3'>
+			<div class='image_box' id='image_box_3' style="height:280px; width:280px;">
+				<div class='left image_panel'><a onclick="changePage('3', '2'); displayImage('2', 3)" href="javascript:void(0);"><div class='left black nav_button'></div></a></div>
+				<div class='middle image_panel'><a onclick="swapImage('3', 3)" href="javascript:void(0);"><div class='middle black nav_button'></div></a></div>
+				<div class='right image_panel'><a onclick="changePage('3', '1'); displayImage('1', 3)" href="javascript:void(0);"><div class='right black nav_button'></div></a></div>
+			</div>
+			<div class='links'>
+				<div class='row'>
+					<a><img src='icons/games.png' class='title_img'/></a>
+					<a>Games</a>
+					<a>Games</a>
+					<a>Games</a>
+					<a>Games</a>
+					<a>Games</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/art.png' class='title_img'/></a>
+					<a>Art</a>
+					<a>Art</a>
+					<a>Art</a>
+					<a>Art</a>
+				</div>
+				<div class='row'>
+					<a><img src='icons/4chan.png' class='title_img'/></a>
+					<a>Imageboard</a>
+					<a>Imageboard</a>
+					<a>Imageboard</a>
+				</div>
+				<div class='row'>
+					<a href="https://www.reddit.com/"><img src='icons/reddit.png' class='title_img'/></a>
+					<a>Reddit</a>
+					<a>Reddit</a>
+				</div>
+			</div>
+		</div>
+	</body>
 	<script src="js/search.js"></script>
 </html>

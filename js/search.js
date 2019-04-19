@@ -36,7 +36,7 @@ function search(query) {
 
 window.onload = function() {
   // search
-  searchInput = document.getElementById("searchbox");
+  searchInput = document.getElementById("search_box");
   if (!!searchInput) {
     searchInput.addEventListener("keydown", function(a) {
       var key = a.keyCode;
